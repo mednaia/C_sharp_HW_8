@@ -42,7 +42,7 @@ int columns = int.Parse(Console.ReadLine() ?? "0");
 Console.Write("Enter amount of matrix depth: ");
 int depth = int.Parse(Console.ReadLine() ?? "0");
 int[,,] matrix = Create3DMatrix(rows,columns,depth);
-if (rows*columns*depth+9>99)
+if (rows*columns*depth+9>100)
 {
     Console.WriteLine("You cannot fill matrix unique double-digit numbers.");
 }
